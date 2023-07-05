@@ -48,7 +48,7 @@ class MainController extends FullLifeCycleController
     startNetworkListen();
 
     NotificationService notificationService = NotificationService();
-    await notificationService.init();
+    // await notificationService.init();
     _isAndroidPermissionGranted();
     _requestPermissions();
     _configureDidReceiveLocalNotificationSubject();
